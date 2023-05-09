@@ -2,7 +2,8 @@ import "./App.css";
 
 /* IMPORT COMPONENTES */
 import Footer from "./Components/Footer/Footer";
-import Navbar from "./Components/Navbar/Navbar";
+import NavBar from "./Components/Navbar/Navbar";
+import About from "./Views/About/About";
 import Condor from "./Views/Condor/Condor";
 import Delta from "./Views/Delta/Delta";
 import Home from "./Views/Home/Home";
@@ -16,9 +17,10 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <Routes>
         <Route path="/" Component={Home} />
+        <Route exact path="/about" Component={About} />
         <Route exact path="/delta" Component={Delta} />
         <Route exact path="/condor" Component={Condor} />
         <Route exact path="/mike" Component={Mike} />

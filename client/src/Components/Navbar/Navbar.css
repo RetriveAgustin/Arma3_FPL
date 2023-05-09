@@ -1,0 +1,13 @@
+.navbar-brand{
+  text-decoration: none;
+  display: flex;
+}
+
+.navbar-logo{
+  height: 7vh;
+  margin-right: 10px;
+}
+
+.link{
+  text-decoration: none;
+}

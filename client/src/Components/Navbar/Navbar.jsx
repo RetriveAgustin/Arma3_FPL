@@ -9,7 +9,7 @@ const NavBar = () => {
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
         <Navbar.Brand>
-          <div className="logo-container">
+          <div className="logo-container" onClick={() => navigate("")}>
             <img
               src="../../assets/logopng.png"
               alt="logo"
@@ -20,11 +20,11 @@ const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link onClick={() => navigate("/about")}>About</Nav.Link>
-            <Nav.Link>Condor</Nav.Link>
-            <Nav.Link>Delta</Nav.Link>
-            <Nav.Link>Mike</Nav.Link>
+          <Nav className="ms-auto">
+            <Nav.Link onClick={() => navigate("/about")}>Nosotros</Nav.Link>
+            <Nav.Link onClick={() => navigate("/condor")}>Condor</Nav.Link>
+            <Nav.Link onClick={() => navigate("/delta")}>Delta</Nav.Link>
+            <Nav.Link onClick={() => navigate("/mike")}>Mike</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

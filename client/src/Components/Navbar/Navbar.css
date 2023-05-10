@@ -1,6 +1,5 @@
-.navbar-brand{
-  text-decoration: none;
-  display: flex;
+.logo-container{
+  align-items: center;
 }
 
 .navbar-logo{

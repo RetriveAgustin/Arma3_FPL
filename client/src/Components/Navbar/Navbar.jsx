@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
@@ -21,10 +21,16 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link onClick={() => navigate("/about")}>Nosotros</Nav.Link>
             <Nav.Link onClick={() => navigate("/condor")}>Condor</Nav.Link>
             <Nav.Link onClick={() => navigate("/delta")}>Delta</Nav.Link>
             <Nav.Link onClick={() => navigate("/mike")}>Mike</Nav.Link>
+            <Nav.Link onClick={() => navigate("/campaña")}>Campañas</Nav.Link>
+            <Nav.Link onClick={() => navigate("/informacion")}>El Clan</Nav.Link>
+            <Nav.Link onClick={() => navigate("/social")}>Social</Nav.Link>
+            <NavDropdown title="Info." id="nosotros-dropdown">
+              <NavDropdown.Item onClick={() => navigate("/carrera")}>Carrera en F.P.L.</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/reglamentos")}>Regalmentos</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,6 +1,13 @@
+import "./Home.css"
+/* IMPORT COMPONENTES */
+import Carrousel from "../../Components/Carrousel/Carrousel";
+
+
 const Home = () => {
   return (
-    <h2>Home</h2>
+    <div className="home-container">
+      <Carrousel />
+    </div>
   )
 }
 

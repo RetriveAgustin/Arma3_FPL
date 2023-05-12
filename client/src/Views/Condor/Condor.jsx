@@ -1,6 +1,11 @@
+import "./Condor.css"
+import condor from "./assets/CONDOR.png";
+
 const Condor = () => {
   return (
-    <h2>Condor</h2>
+    <div className="logo-condor">
+      <img src={condor} alt="condor logo" />
+    </div>
   )
 }
 

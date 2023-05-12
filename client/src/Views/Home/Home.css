@@ -1,5 +1,12 @@
 .home-container{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+}
+
+.carousel-container{
   background: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(13, 13, 14), rgba(0, 0, 0, 0));
+}
+
+.seccion1{
+  color: white
 }

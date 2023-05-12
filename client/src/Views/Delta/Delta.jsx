@@ -1,6 +1,11 @@
+import "./Delta.css";
+import delta from "./assets/DELTA.png";
+
 const Delta = () => {
   return (
-    <h2>Delta</h2>
+    <div className="logo-delta">
+      <img src={delta} alt="delta logo" />
+    </div>
   )
 }
 

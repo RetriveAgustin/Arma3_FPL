@@ -30,7 +30,24 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <Carrousel fotos={images}/>
+      <div className="carousel-container">
+        <Carrousel fotos={images}/>
+      </div>
+      <div className="seccion1">
+        <div className="seccion1-comunidad">
+          <h2>La Comunidad</h2>
+          <p>F.P.L. es una comunidad que busca desarrollar un ambiente equilibrado entre Milsim (durante las operaciones) y Soft Sim (entorno relajado fuera de las operaciones) a fin de desarrollar la hermandad y la camaradería.</p>
+        </div>
+        <div className="seccion1-vanguardia">
+          <p>Siempre tratamos de estar a la vanguardia, tanto con los mods, modos de juego y en tácticas o estrategias. Contamos con un servidor Top Tier para desarrollar las actividades regulares y extra-oficiales.</p>
+        </div>
+        <div className="seccion1-actividades">
+          <h3>Actividades Oficiales</h3>
+          <p>Llevadas a cavo por la plana de Oficiales y Suboficiales, estas campañas se enmarcan en la más estricta replicación de contextos operacionales diversos.</p>
+          <h3>Actividades Extra-Oficiales</h3>
+          <p>Estas operaciones pueden ser campañas o misiones desarrolladas por cualquiera de los miembros del Clan, a partir del rango de Soldado, y son reguladas por miembros capacitados para mantener el nivel de simulación de las operaciones.</p>
+        </div>
+      </div>
     </div>
   )
 }

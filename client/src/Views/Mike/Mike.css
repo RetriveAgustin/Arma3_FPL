@@ -1,0 +1,8 @@
+.logo-mike{
+  display: flex;
+  margin: 5vh;
+  justify-content: center;
+}
+.logo-mike img{
+  height: 30vh;
+}

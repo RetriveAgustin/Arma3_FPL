@@ -1,0 +1,8 @@
+.logo-delta{
+  display: flex;
+  margin: 5vh;
+  justify-content: center;
+}
+.logo-delta img{
+  height: 30vh;
+}

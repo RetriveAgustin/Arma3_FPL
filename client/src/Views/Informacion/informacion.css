@@ -1,0 +1,8 @@
+.logo-fpl{
+  display: flex;
+  margin: 1vh;
+  justify-content: center;
+}
+.logo-fpl img{
+  height: 40vh;
+}
